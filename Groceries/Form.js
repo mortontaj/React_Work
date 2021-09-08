@@ -68,7 +68,7 @@ class FormControlClass extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container_of_all">
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="items">Items:</label>
           <input
@@ -77,7 +77,6 @@ class FormControlClass extends Component {
             onChange={this.handleChange}
             value={this.state.item}
           />
-          <br />
           <label htmlFor="units">Unit:</label>
           <input
             type="text"
@@ -85,7 +84,6 @@ class FormControlClass extends Component {
             onChange={this.handleChange}
             value={this.state.units}
           />
-          <br />
           <label htmlFor="quantity">Quantity:</label>
           <input
             type="text"
@@ -93,13 +91,12 @@ class FormControlClass extends Component {
             onChange={this.handleChange}
             value={this.state.quantity}
           />
-          <br />
           <input type="submit" value="Submit" />
         </form>
-
-        <h5>List</h5>
-        <br />
-        <ListComponent items={this.state.groceries} />
+        <div className="shopping_list">
+          <h5 className="listHeader">List</h5>
+          <ListComponent items={this.state.groceries} />
+        </div>
       </div>
     );
   }

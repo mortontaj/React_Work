@@ -6,3 +6,25 @@
 li {
   list-style: none;
 }
+
+.listHeader {
+  margin-top: 0;
+}
+
+.shopping_list {
+  padding: 13px;
+}
+
+label {
+  text-align: start;
+}
+
+form {
+  display: grid;
+  padding: 13px;
+}
+
+.container_of_all {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
