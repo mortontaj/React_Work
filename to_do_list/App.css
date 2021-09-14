@@ -1,0 +1,30 @@
+﻿ol {
+  display: grid;
+  text-transform: capitalize;
+  text-align-last: center;
+  text-shadow: 0 0 black;
+  -webkit-text-stroke-width: medium;
+  justify-content: space-around;
+  justify-items: start;
+}
+
+h1 {
+  display: grid;
+  justify-content: space-around;
+  color: orangered;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: grid;
+  justify-items: center;
+}
+
+#add_todo {
+  display: flex;
+  place-self: flex-end;
+}
